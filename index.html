@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="Javascript/Script.js">
     <title>Prueba</title>
 </head>
 <body>
@@ -21,11 +22,12 @@
     </header>
     
     <div class="carousel">
-        <p>asdasda</p>
         <div class="carousel-images">
             <img src="images/foto_blog1.jpg" alt="Imagen 1">
             <img src="images/foto_blog2.jpg" alt="Imagen 2">
             <img src="images/foto_blog3.jpg" alt="Imagen 3">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
     </div>
     <div class="carousel2">
@@ -34,4 +36,19 @@
    
 
 </body>
+<script >
+    let currentIndex = 0;
+
+    function moveSlide(step) {
+        const slides = document.querySelectorAll('.carousel-images img');
+        const totalSlides = slides.length;
+        currentIndex = (currentIndex + step + totalSlides) % totalSlides;
+        const offset = -currentIndex * 100;
+        document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+    }
+
+    // Iniciar el carrusel
+    setInterval(() => moveSlide(1), 3000); // Cambiar de imagen cada 3 segundos
+
+</script>
 </html>
