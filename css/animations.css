@@ -1,0 +1,24 @@
+.fadeDown{
+    animation-duration: 1s; /* tiempo de duraciond de la animacion*/
+    animation-fill-mode: both; /* asegura que se cumplan los frame*/
+    animation-name: fadeDown; /* nombre de la animation */
+     /* el -webkit- asegura que la animacion corra en todos los navegadores */
+    -webkit-animation-duration: 1s; /* tiempo de duraciond de la animacion*/
+    -webkit-animation-fill-mode: both; /* asegura que se cumplan los frame*/
+    -webkit-animation-name: fadeDown; /* nombre de la animation */
+  }
+  
+  @keyframes fadeDown {
+    from{              /* desde donde arranca la animacion */
+      opacity: 0;      /* maneja la opacidad  */
+      -webkit-transform: translate3d(0, -100%, 0); /*genera movimiento en ese elemento*/
+      transform: translate3d(0, -100%, 0);
+    }to{              /* donde termina la animacion */
+      opacity: 1;     /* maneja la opacidad  */
+      -webkit-transform: translate3d(0, 0, 0); /*genera movimiento en ese elemento*/
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+  

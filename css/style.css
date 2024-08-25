@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+  }
+
+/* styles of header  */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: solid;
+    color: black;
+    height: 100px;
+    /*width: inherit;   /*IMPORTANTE*/
+    display: flex; /* IMPORTANTE */
+    
+}
+
+header div{
+    height: auto;
+    width: 26.2em;
+}
+
+.header-Left{
+    border: solid;
+    color: black;
+    /*
+    height: 100px;
+    width: 50px;
+    */
+}
+
+.header-center{
+    border: solid;
+    color: red;
+    /*
+    height: 100px;
+    width: 50px;
+    */
+}
+
+.header-right{
+    border: solid;
+    color: blue;
+    /*
+    height: 100px;
+    width: 50px;
+    */
+}
+
+/* Style of carousel */
+
+.carousel{
+    border: solid;
+    border-color: yellow;
+    color: black;
+    height: 500px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.carousel2{
+    border: solid;
+    color:red;
+    height: 500px;
+    width: 100%;
+}
